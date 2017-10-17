@@ -33,10 +33,7 @@ module.exports = {
         server: {
             plugins: [
                 require.resolve('babel-plugin-transform-es2015-modules-commonjs'),
-                [require.resolve('babel-plugin-css-modules-transform'), {
-                    generateScopedName: '[hash:8]',
-                    extensions: ['.css']
-                }]
+                require.resolve('babel-plugin-css-modules-transform')
             ]
         },
         test: {
